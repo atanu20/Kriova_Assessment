@@ -1,0 +1,14 @@
+.nav-item a{
+    color:white !important;
+}
+.dot{
+ 
+   background: white;
+   padding: 5px;
+   
+}
+nav{
+    display: flex;
+    justify-content:space-between !important;
+    align-items: center;
+}
