@@ -3,7 +3,8 @@ const uploadImage = require('../middleware/uploadImage');
 const uploadCtrl = require('../controllers/uploadCtrl');
 const auth = require('../middleware/auth');
 
-router.post('/upload_avatar', uploadImage, auth, uploadCtrl.uploadAvatar);
-router.post('/upload_resume', uploadImage, auth, uploadCtrl.upload_resume);
+router.post('/avatar', uploadImage, auth, uploadCtrl.uploadAvatar);
+// router.post('/csv_file', auth, uploadCtrl.upload_csv_file);
+router.post('/csv_file', uploadCtrl.upload_csv_file);
 
 module.exports = router;
